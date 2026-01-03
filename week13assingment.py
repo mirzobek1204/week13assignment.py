@@ -20,9 +20,9 @@ def save_to_file(url, filename="mycats.txt"):
         with open(filename, "w") as f:
             f.write(url)
             f.write("\n")
-        print(f"Image URL saved :{filename}.")
+        print(f"Image URL saved to :{filename}.")
     except Exception as e:
-        print(f"Error saving to file:{e}")
+        print(f"Error saved to :{e}")
         
 def main():
     print("=== CAT IMAGE EXPLORER ===")
@@ -33,6 +33,7 @@ def main():
         print(cat_url)
         save_to_file(cat_url)
 main()
+
 
 
 
